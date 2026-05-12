@@ -26,8 +26,8 @@ pipeline {
                 echo 'Deploying application...'
 
                 sh '''
-                mkdir -p /var/www/html
-                cp -r * /var/www/html/
+                sudo mkdir -p /var/www/html
+                sudo cp -r * /var/www/html/
                 '''
             }
         }
